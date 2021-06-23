@@ -38,7 +38,7 @@ getElem(apiUrl); // put the data in the HTML(section) by creating div with image
 
 function formData (e)  {
     e.preventDefault();
-    moviesSection.innerHTML = 'PLEASE enter e keyword for searching a movie!'; // if search input is empty, movies section disappear.
+    moviesSection.innerHTML = ''; // if search input is empty, movies section disappear.
     const search = searchWord.value;
     if(search) {
         getElem(SEARCHAPI + search);
